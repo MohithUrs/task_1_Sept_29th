@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Request for Information</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Arial, sans-serif;
+            background: #fafafa;
+            margin: 0;
+            padding: 0;
+        }
+        .header {
+            background: #2196f3;
+            color: #fff;
+            padding: 12px 24px;
+            font-size: 18px;
+            font-weight: 500;
+        }
+        .container {
+            margin: 24px;
+            background: #fff;
+            border-radius: 6px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+            padding: 24px;
+        }
+        .flex-row {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+        }
+        .company-info {
+            max-width: 50%;
+        }
+        .company-info h2 {
+            margin: 0 0 8px 0;
+            font-size: 20px;
+            font-weight: 600;
+        }
+        .company-info p {
+            margin: 2px 0;
+            font-size: 15px;
+        }
+        .contact-info {
+            margin-top: 12px;
+        }
+        .contact-info span {
+            display: block;
+            margin-bottom: 4px;
+            font-size: 15px;
+        }
+        .project-info {
+            background: #f7f7f7;
+            border-radius: 6px;
+            padding: 16px;
+            min-width: 280px;
+            font-size: 15px;
+        }
+        .project-info .status {
+            display: inline-block;
+            background: #2962ff;
+            color: #fff;
+            border-radius: 12px;
+            padding: 2px 12px;
+            font-size: 13px;
+            margin-bottom: 5px;
+        }
+        .subject-bar {
+            margin: 24px 0 12px 0;
+            padding: 8px;
+            background: #f7f7f7;
+            border-radius: 4px;
+            font-size: 16px;
+        }
+        .submission-row {
+            display: flex;
+            gap: 24px;
+            margin-bottom: 16px;
+        }
+        .submission-col {
+            flex: 1;
+        }
+        .submission-label {
+            font-weight: 500;
+            margin-bottom: 6px;
+            display: block;
+        }
+        .submission-user {
+            background: #f1f1f1;
+            border-radius: 20px;
+            padding: 6px 16px;
+            display: inline-block;
+            font-size: 15px;
+            margin-top: 4px;
+        }
+        .question-section {
+            border: 1px solid #e0e0e0;
+            border-radius: 6px;
+            margin-bottom: 16px;
+            background: #fff;
+        }
+        .question-header {
+            background: #f7f7f7;
+            padding: 8px 16px;
+            border-bottom: 1px solid #e0e0e0;
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+        .question-header .question-label {
+            font-weight: 500;
+            font-size: 15px;
+        }
+        .question-header .question-number {
+            background: #e0e0e0;
+            border-radius: 6px;
+            padding: 2px 8px;
+            font-size: 14px;
+            margin-left: 8px;
+        }
+        .question-body {
+            padding: 16px;
+            font-size: 15px;
+        }
+        .answer-section {
+            border: 1px solid #e0e0e0;
+            border-radius: 6px;
+            background: #fff;
+            margin-bottom: 24px;
+        }
+        .answer-header {
+            background: #f7f7f7;
+            padding: 8px 16px;
+            border-bottom: 1px solid #e0e0e0;
+            font-weight: 500;
+            font-size: 15px;
+        }
+        .answer-body {
+            padding: 24px;
+            text-align: center;
+            color: #888;
+            font-size: 15px;
+        }
+        .right-info {
+            margin-left: 24px;
+            min-width: 260px;
+            background: #f7f7f7;
+            border: 1px solid #e0e0e0;
+            border-radius: 8px;
+            padding: 16px 18px;
+            box-sizing: border-box;
+            width: 320px;
+            display: flex;
+            flex-direction: column;
+            gap: 0;
+        }
+        .info-row {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 8px 0;
+            border-bottom: 1px solid #e0e0e0;
+            font-size: 15px;
+        }
+        .info-row:last-child {
+            border-bottom: none;
+        }
+        .priority {
+            display: inline-block;
+            background: #ffb300;
+            color: #fff;
+            border-radius: 8px;
+            padding: 2px 10px;
+            font-size: 13px;
+            margin-bottom: 8px;
+        }
+        .footer-actions {
+            display: flex;
+            justify-content: flex-end;
+            gap: 12px;
+            margin-top: 24px;
+        }
+        .footer-actions button {
+            background: #2196f3;
+            color: #fff;
+            border: none;
+            border-radius: 4px;
+            padding: 8px 20px;
+            font-size: 15px;
+            cursor: pointer;
+        }
+        .footer-actions .close-btn {
+            background: #e0e0e0;
+            color: #333;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">Request for Information</div>
+    <div class="container">
+        <div class="flex-row">
+            <div class="company-info">
+                <h2>Virtuele INC</h2>
+                <p>338 KIADB Sanria Engineering & consultants, Mysuru, Karnataka</p>
+                <p>India, 570017</p>
+                <div class="contact-info">
+                    <span>name: Nagendra C</span>
+                    <span>phone: 7406929711</span>
+                    <span>mail nagendra@virtuele.us</span>
+                </div>
+            </div>
+            <div class="project-info">
+                <div class="info-row"><strong>Project Name:</strong> Direct And Indirect Member</div>
+                <div class="info-row"><strong>Job #:</strong> impact</div>
+                <div class="info-row"><strong>(Virtuele INC) RFI #:</strong> RFI-330</div>
+                <div class="info-row"><strong>Version #:</strong> 1.1</div>
+              <div> Status  <div class="status"> Open </div> </div>
+            </div>
+        </div>
+        <div class="subject-bar">Subject : Beam modification</div>
+        <div class="submission-row">
+            <div class="submission-col">
+                <span class="submission-label">Submitted To :</span>
+                <span class="submission-user">Pavan kumar G (Virtuele INC)</span>
+            </div>
+            <div class="submission-col">
+                <span class="submission-label">Return To :</span>
+                <span class="submission-user">Nagendra C (Virtuele INC)</span>
+            </div>
+            <div class="submission-col">
+                <span class="submission-label">Distribution List:</span>
+            </div>
+        </div>
+        <div class="flex-row">
+            <div style="flex: 1;">
+                <div class="question-section">
+                    <div class="question-header">
+                        <span class="question-label">Question</span>
+                        <span class="question-number">1</span>
+               
+                    </div>
+                    <div class="question-body">
+                        Change the profile based on the load level
+                    </div>
+                </div>
+                <div class="answer-section">
+                    <div class="answer-header">Answer</div>
+                    <div class="answer-body">
+                        <span style="font-size:22px;"></span><br>
+                        Awaiting response from authorized user(s)
+                    </div>
+                </div>
+            </div>
+            <div class="right-info">
+                <div class="info-row"><span><strong>Discipline</strong></span><span>Architecture</span></div>
+                <div class="info-row"><span><strong>Project Status</strong></span><span>64546</span></div>
+                <div class="info-row"><span><strong>Visible To</strong></span><span>Project Team</span></div>
+                <div class="info-row"><span><strong>Sequence</strong></span><span>--</span></div>
+                <div class="info-row"><span><strong>Priority</strong></span><span class="priority">Medium</span></div>
+                <div class="info-row"><span><strong>Need Answer By</strong></span><span>Oct 01, 2025</span></div>
+                <div class="info-row"><span><strong>Cost Impact ($)</strong></span><span>TBD</span></div>
+                <div class="info-row"><span><strong>Cost ($)</strong></span><span>--</span></div>
+                <div class="info-row"><span><strong>Schedule Impact (Days)</strong></span><span>TBD</span></div>
+                <div class="info-row"><span><strong>Schedule (Days)</strong></span><span>--</span></div>
+                <div class="info-row"><span><strong>Cost Code</strong></span><span>12354</span></div>
+                <div class="info-row"><span><strong>Constraints</strong></span><span>Prevents</span></div>
+                <div class="info-row"><span><strong>Location</strong></span><span>Target location</span></div>
+            </div>
+        </div>
+        <div class="footer-actions">
+            <button class="close-btn">Close</button>
+            <button>Download</button>
+        </div>
+    </div>
+</body>
+</html>
